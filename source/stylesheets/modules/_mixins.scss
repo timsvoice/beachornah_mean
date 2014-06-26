@@ -1,0 +1,10 @@
+//centering anything (known dimensions)
+
+@mixin dead-center($content-width, $content-height) {
+  margin-left: (-1 * $content-width/2);
+  position: absolute;
+  top: (-1 * $content-height/2);
+  left: 50%;
+  width: $content-width;
+  visibility: visible;
+}

@@ -2,7 +2,7 @@
 middleman-sass-foundation
 =========================
 
-A Middleman template with Foundation and Sass Way folder structure
+A [Middleman](http://middlemanapp.com/) template built with [ZURB Foundation](http://foundation.zurb.com/) and [Sass Way](http://thesassway.com/beginner/how-to-structure-a-sass-project) folder structure
 
 Thanks to [axyz](https://github/axyz) who's [Middleman ZURB Foundation template](https://github.com/axyz/middleman-zurb-foundation) provided the main structure and [ZURB Foundation](http://foundation.zurb.com/) integration method detailed below.
 
@@ -52,6 +52,5 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-=======
 
 
