@@ -12,7 +12,6 @@ hr {
 }
 
 .background-image {
-  height: 100%;
   width: 100%;
 }
 
@@ -34,6 +33,7 @@ hr {
 //global 
 
 .container {
+  min-width: 100%;
 }
 
 .air-temp, .water-temp, .wave-height {
