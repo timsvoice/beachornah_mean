@@ -1,4 +1,5 @@
-app.factory('WeatherData', function($http) {
+angular.module('beachday.services', [])
+.factory('WeatherData', function($http) {
 
     var results = [];
 

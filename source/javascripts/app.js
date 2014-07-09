@@ -1,4 +1,7 @@
-var app = angular.module('beachday',[]);
+angular.module('beachday', [
+  'beachday.controllers',
+  'beachday.services'
+]);
 
 $(document).ready(function() {
   //splash 
