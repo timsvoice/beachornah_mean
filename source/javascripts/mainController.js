@@ -1,35 +1,75 @@
-angular.module('beachday.controllers', [])
-.controller('mainController', ['$scope', 'worldWeatheronlineAPI',
-  function($scope, worldWeatheronlineAPI) {
+app.config(['$httpProvider', function($httpProvider) {
+        $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    }
+]);
+
+app.controller('mainController', ['$scope', 'worldWeatheronlineAPI', 'magicSeaweedAPI',
+  function($scope, worldWeatheronlineAPI, magicSeaweedAPI) {
 
   $scope.results = [];
+  $scope.days = [];
 
   getData();
 
-  function getData() {
-      worldWeatheronlineAPI.getData()
-      .success(function (data) {
-        $scope.results = data.data.weather[0].hourly;
+  function humanDate (timestamp){
+    var date = new Date(timestamp*1000);
+    var hours = date.getHours();
+  }
 
-  console.log($scope.results);
+  function getData() {
+      magicSeaweedAPI.getData()
+      .success(function (data) {
+        
+        var days    =    {
+          
+        'dayOne'  :  [
+                        data[2].issueTimestamp,
+                        data[3].issueTimestamp,
+                        data[4].issueTimestamp,
+                        data[5].issueTimestamp,
+                        data[6].issueTimestamp
+                      ],
+
+        'dayTwo'  :   [
+                        data[9].issueTimestamp,
+                        data[10].issueTimestamp,
+                        data[11].issueTimestamp,
+                        data[12].issueTimestamp,
+                        data[13].issueTimestamp
+                      ],
+
+        'dayThree' : [
+                        data[16].issueTimestamp,
+                        data[17].issueTimestamp,
+                        data[18].issueTimestamp,
+                        data[19].issueTimestamp,
+                        data[20].issueTimestamp
+                      ],
+
+        'dayFour'  : [
+                        data[25].issueTimestamp,
+                        data[26].issueTimestamp,
+                        data[27].issueTimestamp,
+                        data[28].issueTimestamp,
+                        data[29].issueTimestamp
+                      ],
+
+        'dayFive'  : [
+                        data[32].issueTimestamp,
+                        data[33].issueTimestamp,
+                        data[34].issueTimestamp,
+                        data[35].issueTimestamp,
+                        data[36].issueTimestamp
+                      ]
+        };
+
+
+        $scope.days = days;
+        $scope.results = (data);
+        console.log($scope.days);
 });
 }
 
 }]);
 
-angular.module('beachday.services', [])
-.factory('worldWeatheronlineAPI', function($http) {
-
-  var location = "40.560624,-73.870182";
-  var apiKey = "b8b0ce91aff80e7fc445db42a798738b16a956ed";
-  var url = 'http://api.worldweatheronline.com/free/v1/marine.ashx?format=json&q=' + location + '&key=' + apiKey;
-  
-  var worldWeatheronlineAPI = {};
-
-  worldWeatheronlineAPI.getData = function() {
-    return $http.get(url);
-  };
-  
-  return worldWeatheronlineAPI;
-
-});

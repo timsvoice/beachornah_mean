@@ -1,23 +1,39 @@
-angular.module('beachday.services', [])
-.factory('WeatherData', function($http) {
+app.factory('worldWeatheronlineAPI', function($http) {
 
-    var results = [];
+  var location = "40.560624,-73.870182";
+  var apiKey = "b8b0ce91aff80e7fc445db42a798738b16a956ed";
+  var url = 'http://api.worldweatheronline.com/free/v1/marine.ashx?format=json&q=' + location + '&key=' + apiKey;
+  
+  var worldWeatheronlineAPI = {};
 
-    this.initialize = function() {
-      //API requires location
-      
-      var location = "40.560624,-73.870182";
-      var apiKey = "b8b0ce91aff80e7fc445db42a798738b16a956ed";
+  worldWeatheronlineAPI.getData = function() {
+    return $http.get(url).success(function(data){
+      console.log(data);
+    });
+  };
+  
+  return worldWeatheronlineAPI;
 
-      $http.get('http://api.worldweatheronline.com/free/v1/marine.ashx?format=json&q=' + location + '&key=' + $scope.apiKey).success(function(data) {
-              
-          angular.forEach(data.data.weather[ 0 ].hourly, function(stats, index){
-            results.push(stats);
-          });
-          console.log(results);
-      }).error(function(error) {
+});
 
-      });
-    };
+app.factory('magicSeaweedAPI', function($http) {
 
-  });
+  var location = "10";
+  var apiKey = "qG21ZE2M77GvWjOnu28h7S1nYflsdr4x";
+  var url = ' http://www.corsproxy.com/magicseaweed.com/api/' + apiKey + '/forecast/?spot_id=' + location + '?callback=JSON_CALLBACK';
+  
+  var magicSeaweedAPI = [];
+
+  magicSeaweedAPI.getData = function() {
+    return $http.get(url, {headers: {
+    }}).success(function(data){
+
+      console.log(data);
+    }).error(function(headers) {
+      console.log("test");
+    });
+  };
+  
+  return magicSeaweedAPI;
+
+});
