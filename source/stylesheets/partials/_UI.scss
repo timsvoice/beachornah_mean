@@ -1,0 +1,14 @@
+.arrows {
+  display: inline-block;
+  float: left;
+  i {
+    color: $white;
+    font-size: 8rem;
+  }
+  i.right {
+    margin-right: 5%;
+  }
+  i.left {
+    margin-left: 5%;
+  }
+}
