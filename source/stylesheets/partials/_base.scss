@@ -72,6 +72,41 @@ hr {
   @include dead-center(300px, 300px);
 }
 
+//Yah Page
+
+.yah-message {
+  @include dead-center(303px, 265px);
+
+}
+
+.yah-background {
+  background: url(/images/yah.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.circle {
+  @include circle(275px, 275px);
+  @include dead-center(275px, 375px);
+  background-color: $transparent-black;
+}
+
+//Nah Page
+
+.nah-message {
+  @extend .yah-message;
+}
+
+.nah-background {
+  @extend .yah-background;
+  background: url(/images/nah.png) no-repeat center center;
+}
+
 //temp containers
 
 .air-temp {

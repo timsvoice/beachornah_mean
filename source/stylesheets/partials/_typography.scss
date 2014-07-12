@@ -12,6 +12,16 @@ li {
   display: inline-block;
 }
 
+//Global
+
+button.deets {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  a {
+    color: $white;
+  }
+}
+
 //Splash Scree (Desktop)
 
 .resize-brah {
@@ -21,6 +31,16 @@ li {
   font-weight: $heavy-text;
   font-size: 5rem;
   text-transform: uppercase;
+}
+
+//Yah Message 
+
+.yah-message {
+  color: $white;
+  font-size: 7rem;
+  font-weight: $heavy-text;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h1 {

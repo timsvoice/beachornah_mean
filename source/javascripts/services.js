@@ -27,7 +27,7 @@ app.factory('magicSeaweedAPI', function($http) {
   magicSeaweedAPI.getData = function() {
     return $http.get(url, {headers: {
     }}).success(function(data){
-
+      console.log("success");
       console.log(data);
     }).error(function(headers) {
       console.log("test");
