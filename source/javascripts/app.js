@@ -8,7 +8,7 @@ app.config(['$routeProvider','$locationProvider',
     // 
     $routeProvider.
       when('/', {
-        templateUrl: 'yah',
+        templateUrl: 'nah',
       }).
       when('/nah', {
         templateUrl: 'nah',
