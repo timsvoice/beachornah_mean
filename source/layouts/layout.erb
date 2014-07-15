@@ -1,11 +1,12 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app="beachday" ng-controller="mainController" ng-init="init()">
+<html lang="en"  ng-app="beachday" ng-controller="mainController" ng-init="init()">
   <head>
-    <!-- Angular -->        
+    <!-- Angular -->
+    <base href="/">
+     
     <!-- Typography -->
     <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
-    
+    <link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>    
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +19,6 @@
   </head>
   <body class="<%= page_classes %>">
     <%= yield %>
-    <%= javascript_include_tag  "all", "mainController", "services" %>
+    <%= javascript_include_tag  "all", "mainController", "services", "resize" %>
   </body>
 </html>

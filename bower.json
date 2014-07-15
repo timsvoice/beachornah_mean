@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "angular": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "angular-route": "~1.2.x",
+    "angular-animate": "~1.2.x"
   }
 }
+
+

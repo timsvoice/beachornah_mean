@@ -4,8 +4,8 @@ app.config(['$httpProvider', function($httpProvider) {
     }
 ]);
 
-app.controller('mainController', ['$scope', 'worldWeatheronlineAPI', 'magicSeaweedAPI',
-  function($scope, worldWeatheronlineAPI, magicSeaweedAPI) {
+app.controller('mainController', ['$scope', '$route', 'worldWeatheronlineAPI', 'magicSeaweedAPI',
+  function($scope, $route, worldWeatheronlineAPI, magicSeaweedAPI) {
 
   $scope.results = [];
 
