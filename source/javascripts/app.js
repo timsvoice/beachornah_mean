@@ -28,17 +28,34 @@ app.config(['$routeProvider','$locationProvider',
       $locationProvider.html5Mode(true);
   }]);
 
-//jQuery
-$(window).load(function() {
-  //splash screen resizes to fit window
-  function resizesplash() {
+$( document ).ready(function() {
+    function resizesplash(divId) {
       var heights = window.innerHeight;
       //subtract any footer/header height to ensure a proper fit
-      document.getElementById("splash").style.height = heights -0 + "px";
+      document.getElementById(divId).style.height = heights -0 + "px";
   }
   //resize element as user resizes window
   resizesplash();
   window.onresize = function() {
-      resizesplash();
+      resizesplash(divId);
 };
+
+
+// //jQuery
+// function resize (divId) {
+//   //splash screen resizes to fit window
+//   function resizesplash() {
+//       var heights = window.innerHeight;
+//       //subtract any footer/header height to ensure a proper fit
+//       document.getElementById(divId).style.height = heights -0 + "px";
+//   }
+//   //resize element as user resizes window
+//   resizesplash();
+//   window.onresize = function() {
+//       resizesplash();
+// };
+// }
+
+resizesplash("#splash");
+resizesplash("#nah-splash");
 });
