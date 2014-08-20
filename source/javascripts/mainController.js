@@ -7,67 +7,30 @@ app.config(['$httpProvider', function($httpProvider) {
 app.controller('mainController', ['$scope', '$route', 'worldWeatheronlineAPI', 'magicSeaweedAPI',
   function($scope, $route, worldWeatheronlineAPI, magicSeaweedAPI) {
 
-  $scope.results = [];
+    $scope.results = [];
+    $scope.temp = [];
+    $scope.ornah = [];
+    $scope.background = [];
 
-  getData();
+    getData();
 
-  function humanDate (timestamp){
-    var date = new Date(timestamp*1000);
-    var hours = date.getHours();
-  }
-
-  function getData() {
+    function getData() {
       worldWeatheronlineAPI.getData()
       .success(function (data) {
-        
-        // var days    =    {
-          
-        // 'dayOne'  :  [
-        //                 data[2].issueTimestamp,
-        //                 data[3].issueTimestamp,
-        //                 data[4].issueTimestamp,
-        //                 data[5].issueTimestamp,
-        //                 data[6].issueTimestamp
-        //               ],
-
-        // 'dayTwo'  :   [
-        //                 data[9].issueTimestamp,
-        //                 data[10].issueTimestamp,
-        //                 data[11].issueTimestamp,
-        //                 data[12].issueTimestamp,
-        //                 data[13].issueTimestamp
-        //               ],
-
-        // 'dayThree' : [
-        //                 data[16].issueTimestamp,
-        //                 data[17].issueTimestamp,
-        //                 data[18].issueTimestamp,
-        //                 data[19].issueTimestamp,
-        //                 data[20].issueTimestamp
-        //               ],
-
-        // 'dayFour'  : [
-        //                 data[25].issueTimestamp,
-        //                 data[26].issueTimestamp,
-        //                 data[27].issueTimestamp,
-        //                 data[28].issueTimestamp,
-        //                 data[29].issueTimestamp
-        //               ],
-
-        // 'dayFive'  : [
-        //                 data[32].issueTimestamp,
-        //                 data[33].issueTimestamp,
-        //                 data[34].issueTimestamp,
-        //                 data[35].issueTimestamp,
-        //                 data[36].issueTimestamp
-        //               ]
-        // };
-
-
+        $scope.temp = (data.data.weather[0].maxtempC);
         $scope.results = (data.data.weather[0].hourly);
-        console.log($scope.results);
-});
-}
-
+        if ($scope.temp >= "24" && ($scope.results[4].weatherCode =! 176 | $scope.results[4].weatherCode < 266)) {
+            $scope.ornah.push("yah");
+            $scope.background.push("images/yah.png");
+        }   else if ($scope.temp <= "18" | ($scope.results[4].weatherCode = 122)) {
+            $scope.ornah.push("meh");
+            $scope.background.push("images/nah.png");
+        }   else {
+            $scope.ornah.push("nah");
+            $scope.background.push("images/nah.png");
+        }
+        console.log($scope.ornah);
+        });
+    }
 }]);
 

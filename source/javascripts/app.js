@@ -8,19 +8,10 @@ app.config(['$routeProvider','$locationProvider',
     // 
     $routeProvider.
       when('/', {
-        templateUrl: 'nah',
-      }).
-      when('/nah', {
-        templateUrl: 'nah',
-      }).
-      when('/yah', {
         templateUrl: 'yah',
       }).
-      when('/yah_stats', {
-        templateUrl: 'yah_stats',
-      }).
-      when('/nah_stats', {
-        templateUrl: 'nah_stats',
+      when('/stats', {
+        templateUrl: 'stats',
       }).
       otherwise({
         redirectTo: '/'
