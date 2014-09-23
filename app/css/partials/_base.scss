@@ -94,7 +94,7 @@ hr {
 
 .circle {
   @include circle(240px, 240px);
-  @include dead-center(240px, 340px);
+  @include dead-center(240px, 320px);
   background-color: $transparent-black;
 }
 
