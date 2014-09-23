@@ -12,6 +12,9 @@ ul.deets-toggle {
     max-width: 178px;
   }
   border: $border-thick;
+  &:hover {
+    background: $transparent-black;
+  }
   li {    
     &:last-child {
       border-left: $border-thick;
