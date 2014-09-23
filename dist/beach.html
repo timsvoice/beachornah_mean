@@ -9,7 +9,7 @@
       </div><!-- resize -->
     </div><!-- horizon -->
     <div class="horizon" ng-show="stats">    
-      <div class="circle"></div><!-- circle -->
+      <div class="circle stats"></div><!-- circle -->
       <div class="nah small-10 small-centered columns">
         <p class="temp-air">
           {{results[4].tempF}}&deg;
@@ -21,13 +21,17 @@
     </div><!-- horizon -->            
       <ul class="button-group deets-toggle">
         <li>
-          <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="stats"><a href="#">yah/nah</a></button>
+          <a href="#">
+          <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="stats">yah/nah</button>
+          </a>
         </li>
         <li>
-          <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="yahnah"><a href="#">temps</a></button>
+          <a href="#">
+          <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="yahnah">temps</button>
+          </a>
         </li>
         <li>
-          <button class="small deets secondary"><a href="/">beaches</a></button>
+          <a href="/"><button class="small deets secondary">beaches</button></a>
         </li>
       </ul>
   </div><!-- yah-background -->

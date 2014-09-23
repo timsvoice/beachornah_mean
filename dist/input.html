@@ -18,8 +18,10 @@
 </form>
     </div><!-- horizon -->
       <ul class="button-group deets-toggle">
-        <li>
-          <button ng-click="update(user)" class="small deets beach secondary"><a href="/{{user.location.latlong}}">beach or nah</a></button>
+        <li class="ornah">
+          <a href="/{{user.location.latlong}}">
+            <button ng-click="update(user)" class="small deets beach secondary">beach or nah</button>
+          </a>
         </li>
       </ul> 
     </div><!-- yah-background -->
