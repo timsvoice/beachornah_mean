@@ -31,7 +31,9 @@ ul.deets-toggle {
     }
     button.small.beach {
       width: 260px;
-      width: 178px;
+      @include breakpoint(small) {
+        width: 178px;
+      }
     }
   }
   li.ornah {
