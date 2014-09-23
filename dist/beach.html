@@ -1,0 +1,34 @@
+<div class="background">
+  <div class="{{ornah[0]}}-background" id="results-splash">
+    <div class="horizon" ng-show="yahnah">    
+      <div class="circle"></div><!-- circle -->
+      <div class="nah small-10 small-centered columns">
+        <h3 class="nah-message">
+        {{ornah[0]}}
+        </h3>     
+      </div><!-- resize -->
+    </div><!-- horizon -->
+    <div class="horizon" ng-show="stats">    
+      <div class="circle"></div><!-- circle -->
+      <div class="nah small-10 small-centered columns">
+        <p class="temp-air">
+          {{results[4].tempF}}&deg;
+        </p>
+        <p class="temp-water">
+          {{results[4].waterTemp_F}}&deg;
+        </p>    
+      </div><!-- resize -->
+    </div><!-- horizon -->            
+      <ul class="button-group deets-toggle">
+        <li>
+          <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="stats"><a href="#">yah/nah</a></button>
+        </li>
+        <li>
+          <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="yahnah"><a href="#">temps</a></button>
+        </li>
+        <li>
+          <button class="small deets secondary"><a href="/">beaches</a></button>
+        </li>
+      </ul>
+  </div><!-- yah-background -->
+</div>
