@@ -19,6 +19,9 @@ a {
     color: $white;
     text-transform: uppercase;
     font-size: 1rem;
+    @include breakpoint(small) {
+      font-size: 0.75rem;
+    }
     text-align: center;
     background-color: inherit;    
   }
@@ -39,7 +42,7 @@ a {
 
 .yah-message {
   color: $white;
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: $heavy-text;
   text-transform: uppercase;
   text-align: center;
@@ -94,15 +97,15 @@ h4.interval-title {
 }
 
 .temp-air {
-  font-size: 4rem;
-  margin-top: -9.5rem;
+  font-size: 3.75rem;
+  margin-top: -9rem;
   margin-right: -1rem;
   font-weight: $heavy-text;
 }
 
 .temp-water {
   @extend .temp-air;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   color: $white;
 }
 

@@ -87,20 +87,20 @@ hr {
 //Yah Page
 
 .yah-message {
-  @include dead-center(303px, 265px);
-
+  @include dead-center(303px, 231px);
 }
 
 
 
 .circle {
-  @include circle(275px, 275px);
-  @include dead-center(275px, 375px);
+  @include circle(240px, 240px);
+  @include dead-center(240px, 340px);
   background-color: $transparent-black;
 }
 
 .circle.stats {
   background: url(/img/wave.png) no-repeat center center;
+  width: 240px;
 }
 
 //Nah Page

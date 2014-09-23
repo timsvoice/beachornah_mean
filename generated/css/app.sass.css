@@ -84,25 +84,26 @@ hr {
 .yah-message, .nah-message {
   margin-left: -151.5px;
   position: absolute;
-  top: -132.5px;
+  top: -115.5px;
   left: 50%;
   width: 303px;
   visibility: visible; }
 
 .circle {
   border-radius: 50%;
-  width: 275px;
-  height: 275px;
-  margin-left: -137.5px;
+  width: 240px;
+  height: 240px;
+  margin-left: -120px;
   position: absolute;
-  top: -187.5px;
+  top: -170px;
   left: 50%;
-  width: 275px;
+  width: 240px;
   visibility: visible;
   background-color: rgba(0, 0, 0, 0.25); }
 
 .circle.stats {
-  background: url(/img/wave.png) no-repeat center center; }
+  background: url(/img/wave.png) no-repeat center center;
+  width: 240px; }
 
 .air-temp {
   margin-top: 1rem; }
@@ -184,8 +185,12 @@ a .deets, a .deets.beach {
   color: white;
   text-transform: uppercase;
   font-size: 1rem;
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   text-align: center;
   background-color: inherit; }
+  @media only screen and (max-width: 40em) {
+    a .deets, a .deets.beach {
+      font-size: 0.75rem; } }
 
 .resize-brah {
   font-family: "pragmatica-web", Helvetica, Arial, sans-serif;
@@ -197,7 +202,7 @@ a .deets, a .deets.beach {
 
 .yah-message, .nah-message {
   color: white;
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center; }
@@ -240,13 +245,13 @@ h4.interval-title {
   color: white; }
 
 .temp-air, .temp-water {
-  font-size: 4rem;
-  margin-top: -9.5rem;
+  font-size: 3.75rem;
+  margin-top: -9rem;
   margin-right: -1rem;
   font-weight: 900; }
 
 .temp-water {
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   color: white; }
 
 .app-header {
@@ -274,15 +279,26 @@ ul.deets-toggle {
   margin-bottom: 2rem;
   background: rgba(0, 0, 0, 0.25);
   max-width: 266px;
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   border: 0.125rem white solid; }
+  @media only screen and (max-width: 40em) {
+    ul.deets-toggle {
+      max-width: 178px; } }
   ul.deets-toggle li:last-child {
     border-left: 0.125rem white solid; }
   ul.deets-toggle li button.small {
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 130px; }
+    width: 130px;
+    /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
+    @media only screen and (max-width: 40em) {
+      ul.deets-toggle li button.small {
+        width: 86px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem; } }
   ul.deets-toggle li button.small.beach {
-    width: 260px; }
+    width: 260px;
+    width: 178px; }
   ul.deets-toggle li.ornah {
     border-left: none; }
 
