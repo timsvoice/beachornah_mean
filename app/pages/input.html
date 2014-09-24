@@ -1,28 +1,25 @@
 <div class="background">
   <div class="input-background" id="splash">
-    <div class="horizon">
-    <form>
-  <div class="row intro">
-    <h2 class="intro-header">
-      beach or nah
-    </h2>
-    <div class="small-centered small-10 medium-4 columns">
+    <div class="horizon">          
+  <div class="row intro">  
+<!--     <img src="/img/beachornah.png" alt="beach or ah">
+ -->  <form>  
+    <div class="small-centered small-12 medium-6 columns">
       <label>      
-        <select class="location-list" ng-model="user.location" ng-options="location as location.name for location in beachLocation">
-        </select>
+        <select class="location-list small-9 columns" ng-model="user.location" ng-options="location as location.name for location in beachLocation">
+        <option value="" default selected>name your beach</option>
+        </select>        
       </label>
-    </div>
-  </div>
-  <div class="row">
-  </div>
-</form>
-    </div><!-- horizon -->
-      <ul class="button-group deets-toggle">
+      <ul class="button-group deets-toggle-beach small-3 columns alpha beta">
         <li class="ornah">
           <a href="/{{user.location.latlong}}">
-            <button ng-click="update(user)" class="small deets beach secondary">beach me</button>
+            <button ng-click="update(user)" class="small deets beach secondary">submit</button>
           </a>
         </li>
       </ul> 
+    </div>
+  </div>
+</form>
+    </div><!-- horizon -->
     </div><!-- yah-background -->
 </div>

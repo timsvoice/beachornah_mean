@@ -40,3 +40,24 @@ ul.deets-toggle {
     border-left: none;
   }
 }
+
+ul.deets-toggle-beach {
+  @extend ul.deets-toggle;
+  position: relative;
+  border-left: none;
+  background: $gray;
+  color: $black;
+  height: 50px;
+  width: 88px;
+  &:hover {
+    background: $white;
+  }
+  button.small.deets.beach {
+    width: 90px;
+    color: $transparent-black;
+    font-size: 1rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 0.75rem;
+  }
+}

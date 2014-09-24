@@ -9,16 +9,17 @@
         <select class="location-list" ng-model="user.location" ng-options="location as location.name for location in beachLocation">
         </select>
       </label>
-    </div>
-  </div>
-</form>
-      <ul class="button-group deets-toggle small-10 columns">
-        <li class="ornah">
-          <a href="/{{user.location.latlong}}">
+                <a href="/{{user.location.latlong}}">
             <button ng-click="update(user)" class="small deets beach secondary">beach or nah</button>
           </a>
+    </div>
+          <ul class="button-group deets-toggle small-10 columns">
+        <li class="ornah">
+
         </li>
       </ul>
+  </div>
+</form>
 </div><!-- horizon --> 
     </div><!-- yah-background -->
 </div>

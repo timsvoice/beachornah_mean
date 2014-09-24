@@ -477,7 +477,7 @@ hr {
   visibility: visible; }
 
 .intro {
-  margin-top: -10rem; }
+  margin-top: -3rem; }
 
 .yah-message, .nah-message {
   margin-left: -151.5px;
@@ -497,7 +497,7 @@ hr {
   left: 50%;
   width: 240px;
   visibility: visible;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: rgba(140, 115, 115, 0.75); }
 
 .circle.stats {
   width: 240px; }
@@ -548,7 +548,7 @@ hr {
   width: 275px;
   height: 275px;
   margin-left: 22.5px;
-  background-color: rgba(0, 0, 0, 0.25); }
+  background-color: rgba(140, 115, 115, 0.75); }
 
 .app-message {
   color: white;
@@ -677,7 +677,21 @@ h4.interval-title {
 .app-description p {
   text-align: left; }
 
-ul.deets-toggle {
+select.location-list {
+  background: rgba(140, 115, 115, 0.75);
+  border: 0.125rem #e8e8e8 solid;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-top: 0.875rem;
+  padding-bottom: 0.9375rem;
+  height: auto;
+  border-right: none; }
+
+label {
+  margin-bottom: 0; }
+
+ul.deets-toggle, ul.deets-toggle-beach {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -685,35 +699,52 @@ ul.deets-toggle {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(140, 115, 115, 0.75);
   max-width: 266px;
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   border: 0.125rem white solid; }
   @media only screen and (max-width: 40em) {
-    ul.deets-toggle {
+    ul.deets-toggle, ul.deets-toggle-beach {
       max-width: 178px; } }
-  ul.deets-toggle:hover {
-    background: rgba(0, 0, 0, 0.25); }
-  ul.deets-toggle li:last-child {
+  ul.deets-toggle:hover, ul.deets-toggle-beach:hover {
+    background: rgba(140, 115, 115, 0.75); }
+  ul.deets-toggle li:last-child, ul.deets-toggle-beach li:last-child {
     border-left: 0.125rem white solid; }
-  ul.deets-toggle li button.small {
+  ul.deets-toggle li button.small, ul.deets-toggle-beach li button.small {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 130px;
     /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
     @media only screen and (max-width: 40em) {
-      ul.deets-toggle li button.small {
+      ul.deets-toggle li button.small, ul.deets-toggle-beach li button.small {
         width: 86px;
         padding-left: 0.5rem;
         padding-right: 0.5rem; } }
-  ul.deets-toggle li button.small.beach {
+  ul.deets-toggle li button.small.beach, ul.deets-toggle-beach li button.small.beach {
     width: 260px;
     /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
     @media only screen and (max-width: 40em) {
-      ul.deets-toggle li button.small.beach {
+      ul.deets-toggle li button.small.beach, ul.deets-toggle-beach li button.small.beach {
         width: 178px; } }
-  ul.deets-toggle li.ornah {
+  ul.deets-toggle li.ornah, ul.deets-toggle-beach li.ornah {
     border-left: none; }
+
+ul.deets-toggle-beach {
+  position: relative;
+  border-left: none;
+  background: #e8e8e8;
+  color: #3b3b3b;
+  height: 50px;
+  width: 88px; }
+  ul.deets-toggle-beach:hover {
+    background: white; }
+  ul.deets-toggle-beach button.small.deets.beach {
+    width: 90px;
+    color: rgba(140, 115, 115, 0.75);
+    font-size: 1rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 0.75rem; }
 
 .yah-background, .input-background, .meh-background, .nah-background {
   background: url(/img/yah.png) no-repeat center center;

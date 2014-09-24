@@ -1,0 +1,15 @@
+select.location-list {
+  background: $transparent-black;
+  border: $border-thin;
+  color: $white;
+  font-weight: $light-text;
+  text-transform: uppercase;
+  padding-top: 0.875rem;
+  padding-bottom: 0.9375rem;
+  height: auto;
+  border-right: none;
+}
+
+label {
+  margin-bottom: 0;
+}
