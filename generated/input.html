@@ -4,9 +4,9 @@
     <form>
   <div class="row intro">
     <h2 class="intro-header">
-      name your beach
+      beach or nah
     </h2>
-    <div class="small-centered small-8 medium-4 columns">
+    <div class="small-centered small-10 medium-4 columns">
       <label>      
         <select class="location-list" ng-model="user.location" ng-options="location as location.name for location in beachLocation">
         </select>
@@ -20,7 +20,7 @@
       <ul class="button-group deets-toggle">
         <li class="ornah">
           <a href="/{{user.location.latlong}}">
-            <button ng-click="update(user)" class="small deets beach secondary">beach or nah</button>
+            <button ng-click="update(user)" class="small deets beach secondary">beach me</button>
           </a>
         </li>
       </ul> 

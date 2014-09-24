@@ -10,10 +10,14 @@
     </div><!-- horizon -->
     <div class="horizon" ng-show="stats">    
       <div class="circle stats"></div><!-- circle -->
-      <div class="nah small-10 small-centered columns">
+      <div class="stat-details small-10 small-centered columns">
+        <p class="temp-header">air</p>
+        <br>
         <p class="temp-air">
           {{results[4].tempF}}&deg;
         </p>
+        <p class="temp-header">water</p>
+         <br>
         <p class="temp-water">
           {{results[4].waterTemp_F}}&deg;
         </p>    

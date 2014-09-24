@@ -79,7 +79,7 @@ hr {
   visibility: visible; }
 
 .intro {
-  margin-top: -5rem; }
+  margin-top: -10rem; }
 
 .yah-message, .nah-message {
   margin-left: -151.5px;
@@ -102,7 +102,6 @@ hr {
   background-color: rgba(0, 0, 0, 0.25); }
 
 .circle.stats {
-  background: url(/img/wave.png) no-repeat center center;
   width: 240px; }
 
 .air-temp {
@@ -192,6 +191,13 @@ a .deets, a .deets.beach {
     a .deets, a .deets.beach {
       font-size: 0.75rem; } }
 
+.intro-header {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  font-size: 2.5rem; }
+
 .resize-brah {
   font-family: "pragmatica-web", Helvetica, Arial, sans-serif;
   margin-top: 0;
@@ -244,14 +250,18 @@ h4 {
 h4.interval-title {
   color: white; }
 
+.stat-details {
+  margin-top: -9rem; }
+
+.temp-header {
+  color: white;
+  text-decoration: underline; }
+
 .temp-air, .temp-water {
   font-size: 3.75rem;
-  margin-top: -9rem;
+  margin-top: -3.5rem;
   margin-right: -1rem;
-  font-weight: 900; }
-
-.temp-water {
-  margin-top: 1.25rem;
+  font-weight: 900;
   color: white; }
 
 .app-header {
@@ -300,7 +310,10 @@ ul.deets-toggle {
         padding-right: 0.5rem; } }
   ul.deets-toggle li button.small.beach {
     width: 260px;
-    width: 178px; }
+    /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
+    @media only screen and (max-width: 40em) {
+      ul.deets-toggle li button.small.beach {
+        width: 178px; } }
   ul.deets-toggle li.ornah {
     border-left: none; }
 

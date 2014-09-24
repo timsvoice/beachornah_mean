@@ -27,6 +27,14 @@ a {
   }
 }
 
+.intro-header {
+  font-size: 2.25rem;
+  font-weight: $heavy-text;
+  color: $black;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
 //Splash Scree (Desktop)
 
 .resize-brah {
@@ -96,17 +104,25 @@ h4.interval-title {
   color: white;
 }
 
+.stat-details {
+  margin-top: -9rem;
+}
+
+.temp-header {
+  color: $white;
+  text-decoration: underline;
+}
+
 .temp-air {
   font-size: 3.75rem;
-  margin-top: -9rem;
+  margin-top: -3.5rem;
   margin-right: -1rem;
   font-weight: $heavy-text;
+  color: $white;
 }
 
 .temp-water {
   @extend .temp-air;
-  margin-top: 1.25rem;
-  color: $white;
 }
 
 // app

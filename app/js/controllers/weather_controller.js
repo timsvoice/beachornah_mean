@@ -14,8 +14,8 @@ app.controller('WeatherController', ['$scope','$http', '$routeParams','$location
     $scope.beachLocation = [
         {id: 2, location: 'forttilden', name: 'Fort Tilden', latlong: "40.559064,-73.885521"},
         {id: 2, location: 'jonesbeach', name: 'Jones Beach', latlong: "40.591604,-73.507536"},
-        {id: 2, location: 'longbeach', name: 'Long Beach', latlong: "47.951780,-65.572826"},
-        {id: 2, location: 'rockaways', name: 'Roackaways', latlong: "20.582046,-13.817114"}
+        {id: 2, location: 'longbeach', name: 'Long Beach', latlong: "40.580938,-73.668026"},
+        {id: 2, location: 'rockaways', name: 'Rockaways', latlong: "40.583221,-73.809933"}
     ];
     
     worldWeatheronlineAPI.getData = function() {

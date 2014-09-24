@@ -3,6 +3,8 @@
   <head>
     <title>Beach or Nah</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css" media="all" />
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
