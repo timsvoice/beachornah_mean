@@ -98,8 +98,11 @@ hr {
   background-color: $transparent-black;
 }
 
-.circle.stats {
+.sqaure-stats {
   width: 240px;
+  background-color: $transparent-black;
+  height: 400px;
+  @include dead-center(240px, 400px);
 }
 
 //Nah Page
@@ -131,7 +134,7 @@ hr {
 }
 
 .wave-data {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .horizon {

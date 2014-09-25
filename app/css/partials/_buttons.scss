@@ -48,16 +48,18 @@ ul.deets-toggle-beach {
   background: $gray;
   color: $black;
   height: 50px;
-  width: 88px;
+  width: 74px;
   &:hover {
     background: $white;
   }
-  button.small.deets.beach {
-    width: 90px;
-    color: $transparent-black;
-    font-size: 1rem;
-    padding-top: 0.875rem;
+  button.small.deets.submit-beach {
+    width: 72px;
+    color: $dark-gray;
+    font-size: 0.75rem;
+    padding-top: 1.1rem;
     padding-bottom: 0.9375rem;
-    padding-left: 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    text-align: center;
   }
 }

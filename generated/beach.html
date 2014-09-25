@@ -1,29 +1,56 @@
 <div class="background">
   <div class="{{ornah[0]}}-background">
+    <a href="/"><h4 class="beaches">beaches</h4></a>
     <div class="horizon" ng-show="yahnah">    
       <div class="circle"></div><!-- circle -->
       <div class="nah small-10 small-centered columns">
         <h3 class="nah-message">
         {{ornah[0]}}
-        </h3>     
+        </h3>  
+          <a href="#" class="small beach-deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="yahnah">
+            deets
+          </a>   
       </div><!-- resize -->
     </div><!-- horizon -->
     <div class="horizon" ng-show="stats">    
-      <div class="circle stats"></div><!-- circle -->
+      <div class="sqaure-stats"></div><!-- circle -->
       <div class="stat-details small-10 small-centered columns">
-        <p class="temp-header">air</p>
-        <br>
-        <p class="temp-air">
-          {{results[4].tempF}}&deg;
-        </p>
+        <div class="temp">
+          <p class="temp-header">air</p>
+          <p class="temp-air">{{results[4].tempF}}&deg;</p>
+        </div>
+        <div class="temp-detail"><h4>wind {{results[4].windspeedMiles}} mph - {{results[4].winddir16Point}}</h4></div>
         <p class="temp-header">water</p>
-         <br>
         <p class="temp-water">
           {{results[4].waterTemp_F}}&deg;
-        </p>    
+        </p> 
+        <div class="temp-detail"><h4>wave height</h4></div>
+            <ul class="block-grid one-up wave-data">  
+        <li class="height">
+            <div class="wave-bar">
+              <h2 class="wave-height">{{results[2].swellHeight_m / 0.3 | number: 0 }}ft</h2>            
+            </div><!-- wave-bar -->
+            <h4>9am</h4> 
+        </li><!-- height am --> 
+        <li class="height">
+            <div class="wave-bar">
+              <h2 class="wave-height">{{results[4].swellHeight_m / 0.3 | number: 0 }}ft</h2>
+            </div><!-- wave-bar -->
+            <h4>noon</h4> 
+        </li><!-- height am --> 
+        <li class="height">
+            <div class="wave-bar">
+              <h2 class="wave-height">{{results[6].swellHeight_m / 0.3 | number: 0 }}ft</h2>
+            </div><!-- wave-bar -->
+            <h4>6pm</h4> 
+        </li><!-- height am -->  
+      </ul><!-- wave-data -->
+          <a href="#" class="small beach-yahnah secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="stats">
+            yah/nah
+          </a>    
       </div><!-- resize -->
     </div><!-- horizon -->            
-      <ul class="button-group deets-toggle">
+<!--       <ul class="button-group deets-toggle">
         <li>
           <a href="#">
           <button class="small deets secondary" ng-click="yahnah = !yahnah; stats = !stats" ng-class="{active: stats}" ng-show="stats">yah/nah</button>
@@ -37,6 +64,6 @@
         <li>
           <a href="/"><button class="small deets secondary">beaches</button></a>
         </li>
-      </ul>
+      </ul> -->
   </div><!-- yah-background -->
 </div>
