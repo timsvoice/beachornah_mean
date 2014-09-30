@@ -330,10 +330,17 @@ select.location-list {
   padding-top: 0.875rem;
   padding-bottom: 0.9375rem;
   height: auto;
-  border-right: none; }
+  border-right: none;
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
+  @media only screen and (max-width: 40em) {
+    select.location-list {
+      min-width: 215px; } }
 
 label {
   margin-bottom: 0; }
+
+.input-form {
+  max-width: 321px; }
 
 ul.deets-toggle, ul.deets-toggle-beach {
   position: absolute;

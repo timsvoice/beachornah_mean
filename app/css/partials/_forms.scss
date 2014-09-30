@@ -8,8 +8,15 @@ select.location-list {
   padding-bottom: 0.9375rem;
   height: auto;
   border-right: none;
+  @include breakpoint(small) {
+    min-width: 215px;
+  }
 }
 
 label {
   margin-bottom: 0;
+}
+
+.input-form {
+  max-width: 321px;
 }
