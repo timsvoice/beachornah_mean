@@ -15,8 +15,11 @@ app.controller('WeatherController', ['$scope','$http', '$routeParams','$location
         {id: 2, location: 'forttilden', name: 'Fort Tilden', latlong: "40.559064,-73.885521"},
         {id: 2, location: 'jonesbeach', name: 'Jones Beach', latlong: "40.591604,-73.507536"},
         {id: 2, location: 'longbeach', name: 'Long Beach', latlong: "40.580938,-73.668026"},
-        {id: 2, location: 'rockaways', name: 'Rockaways', latlong: "40.583221,-73.809933"}
-    ];
+        {id: 2, location: 'rockaways', name: 'Rockaways', latlong: "40.583221,-73.809933"},
+        {id: 2, location: 'sunkenmeadow', name: 'Sunken Meadow', latlong: "40.913335,-73.257770"},
+        {id: 2, location: 'oceanbeach', name: 'Ocean Beach', latlong: "40.643422,-73.154728"},
+        {id: 2, location: 'easthampton', name: 'East Hampton', latlong: "40.946653,-72.174974"}
+        ];
     
     worldWeatheronlineAPI.getData = function() {
       return $http.get(url + $routeParams.latlong + '&key=' + apiKey).success(function(data){
