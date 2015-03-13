@@ -1,0 +1,22 @@
+select.location-list {
+  background: $transparent-black;
+  border: $border-thin;
+  color: $white;
+  font-weight: $light-text;
+  text-transform: uppercase;
+  padding-top: 0.875rem;
+  padding-bottom: 0.9375rem;
+  height: auto;
+  border-right: none;
+  @include breakpoint(small) {
+    min-width: 215px;
+  }
+}
+
+label {
+  margin-bottom: 0;
+}
+
+.input-form {
+  max-width: 321px;
+}

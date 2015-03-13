@@ -1,0 +1,40 @@
+/* ============================ 
+  Colors
+============================ */
+
+$gray: hsla(0,0,91%,1);
+$light-gray: hsla(0,0,60%,1);
+$white: hsla(0,0,100%,1);
+$transparent-white: hsla(0,0,100%,0.55);
+$dark-gray: hsla(0,0,33%,1);
+$black: hsla(0,0,23%,1);
+$navy-black: hsla(219,100,13%,1);
+$transparent-black: hsla(0,0,20%,0.45);
+
+/* ============================ 
+  Typography
+============================ */
+
+$body-font: "pragmatica-web", Helvetica, Arial, sans-serif;
+$text-font: "minion-pro", Times, serif;
+$headliner: "Pacifico", Helvetica, Arial, cursive;
+
+$heavy-text:900;
+$medium-text:400;
+$light-text:200;
+
+$underline: 0.0625rem dotted;
+
+/* ============================ 
+  Borders
+============================ */
+
+$border-thick: 0.125rem $white solid;
+$border-thin:  0.125rem $gray solid;
+
+/* ============================ 
+  Backgrounds
+============================ */
+
+$background: $gray;
+$image-location: "https://s3.amazonaws.com/beachornah/img/";

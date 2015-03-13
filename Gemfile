@@ -1,6 +1,4 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source "https://rubygems.org"
 
 ruby "2.2.0"
 
@@ -8,6 +6,8 @@ gem "middleman"
 
 gem "rack-contrib"
 gem "puma"
+
+gem "sass"
 
 # Live-reloading plugin
 gem "middleman-livereload"
@@ -19,3 +19,4 @@ gem "middleman-livereload"
 platforms :mri_18 do
   gem "ruby18_source_location"
 end
+

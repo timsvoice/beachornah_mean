@@ -1,14 +1,26 @@
 {
-  "name": "foundation-compass-app",
-  "version": "0.0.1",
-  "private": "true",
+  "name": "beach or nah",
+  "version": "0.0.0",
+  "homepage": "https://github.com/timsvoice/beachornah",
+  "authors": [
+    "timsvoice <timsethvoice@gmail.com>"
+  ],
+  "description": "Wep App for beach day decisions",
+  "keywords": [
+    "webapp",
+    "API",
+    "weather"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/vendor/bower",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "angular": "1.2.x",
-    "angular-mocks": "~1.2.x",
-    "angular-route": "~1.2.x",
-    "angular-animate": "~1.2.x"
+      "foundation":  "5.0.3"
   }
 }
-
-

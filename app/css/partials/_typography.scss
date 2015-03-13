@@ -1,0 +1,188 @@
+* {
+  text-align: center;
+}
+
+ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+//Global
+
+a.small.beach-deets, .deets.submit-beach {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: underline;
+    @include breakpoint(small) {
+      font-size: 0.75rem;
+    }
+    text-align: center;
+    margin-left: -1.25rem;
+    margin-top: 3rem;
+    position: absolute;    
+}
+
+a.small.beach-yahnah {
+  @extend .small.beach-deets;
+  margin-top: 1.5rem;
+  margin-left: -1.75rem;
+}
+
+.deets.submit-beach {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.intro-header {
+  font-size: 2.25rem;
+  font-weight: $heavy-text;
+  color: $black;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+//Splash Scree (Desktop)
+
+.resize-brah {
+  font-family: $body-font;
+  margin-top: 0;
+  color: $white;
+  font-weight: $heavy-text;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+//Yah Message 
+
+.yah-message {
+  color: $white;
+  font-size: 6rem;
+  font-weight: $heavy-text;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  line-height: 4rem;
+  font-weight: $heavy-text;
+  margin-left: 1.5rem;
+}
+
+h2 {
+  background: inherit;
+}
+
+h4 {
+  font-size: 0.75rem;
+  padding: 0.5rem 0 0;
+  margin: 0;
+  line-height: 0.75rem;
+  text-transform: uppercase;
+}
+
+.beaches {
+  text-align: right;
+  margin-right: 1rem;
+  color: $white;
+  text-decoration: underline;
+}
+
+.wave-height {
+  font-size: 1.25rem;
+  font-weight: $heavy-text;
+  h4 {
+    color: white;
+  }
+}
+
+.temp-detail {
+  font-weight: $heavy-text;
+}
+
+.temp-title {
+  font-weight: $light-text;
+  text-transform: uppercase;
+}
+
+.water-temp {
+  h4, h1 {
+    color: white;
+  }
+}
+
+h4.interval-title {
+  color: white;
+}
+
+.temp-header {
+  color: $gray;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: $heavy-text;
+}
+
+.stat-details {
+  margin-top: -12rem;
+}
+
+.temp-air {
+  font-size: 3.25rem;
+  margin-right: -1rem;
+  font-weight: $heavy-text;
+  color: $white;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 3rem;
+}
+
+.temp-water {
+  @extend .temp-air;
+  margin-bottom: 1rem;
+}
+
+.temp-detail {
+  margin-bottom: 1rem;
+  h4 {
+    color: $gray;
+  }
+}
+
+.height {
+  h4 {
+    color: $gray;
+  }
+  h2 {
+    color: $dark-gray;
+  }
+}
+
+// app
+
+.app-header {
+  color: $white;
+  font-weight: $heavy-text;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: left;
+  margin-left: 0;
+}
+
+.app-details {
+  text-align: left;
+}
+
+.app-description {
+  p {
+    text-align: left;
+  }
+}

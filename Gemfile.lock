@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (4.1.9)
       i18n (~> 0.6, >= 0.6.9)
@@ -122,6 +122,7 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    sass (3.4.2)
 
 PLATFORMS
   ruby
@@ -132,3 +133,4 @@ DEPENDENCIES
   puma
   rack-contrib
   ruby18_source_location
+  sass
