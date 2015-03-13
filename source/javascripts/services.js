@@ -16,24 +16,24 @@ app.factory('worldWeatheronlineAPI', function($http) {
 
 });
 
-app.factory('magicSeaweedAPI', function($http) {
+// app.factory('magicSeaweedAPI', function($http) {
 
-  var location = "10";
-  var apiKey = "qG21ZE2M77GvWjOnu28h7S1nYflsdr4x";
-  var url = ' http://www.corsproxy.com/magicseaweed.com/api/' + apiKey + '/forecast/?spot_id=' + location + '?callback=JSON_CALLBACK';
+//   var location = "10";
+//   var apiKey = "qG21ZE2M77GvWjOnu28h7S1nYflsdr4x";
+//   var url = ' http://www.corsproxy.com/magicseaweed.com/api/' + apiKey + '/forecast/?spot_id=' + location + '?callback=JSON_CALLBACK';
   
-  var magicSeaweedAPI = [];
+//   var magicSeaweedAPI = [];
 
-  magicSeaweedAPI.getData = function() {
-    return $http.get(url, {headers: {
-    }}).success(function(data){
-      console.log("success");
-      console.log(data);
-    }).error(function(headers) {
-      console.log("test");
-    });
-  };
+//   magicSeaweedAPI.getData = function() {
+//     return $http.get(url, {headers: {
+//     }}).success(function(data){
+//       console.log("success");
+//       console.log(data);
+//     }).error(function(headers) {
+//       console.log("test");
+//     });
+//   };
   
-  return magicSeaweedAPI;
+//   return magicSeaweedAPI;
 
-});
+// });
