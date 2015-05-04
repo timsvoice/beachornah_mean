@@ -25,6 +25,9 @@ describe('User Model Unit Tests:', function() {
 			email: 'test@test.com',
 			username: 'username',
 			password: 'password',
+			preferences: {
+				beaches: []
+			},
 			provider: 'local'
 		});
 		user2 = new User({
@@ -34,6 +37,9 @@ describe('User Model Unit Tests:', function() {
 			email: 'test@test.com',
 			username: 'username',
 			password: 'password',
+			preferences: {
+				beaches: []
+			},
 			provider: 'local'
 		});
 
@@ -77,8 +83,12 @@ describe('User Model Unit Tests:', function() {
 				state: faker.address.state(),
 			};			
 			
+			// save the user
 			user.save(function(){
+				// push new beach selection to preferences
 				user.preferences.beaches.push(beach);
+				// set assertion
+				user.preferences.beaches[0].name.should.match(beach.name);
 				done();
 			});
 		})
