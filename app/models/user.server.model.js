@@ -24,6 +24,7 @@ var validateLocalStrategyPassword = function(password) {
 /**
  * User Schema
  */
+
 var UserSchema = new Schema({
 	firstName: {
 		type: String,
@@ -53,6 +54,24 @@ var UserSchema = new Schema({
 		unique: 'testing error message',
 		required: 'Please fill in a username',
 		trim: true
+	},
+	preferences: {
+		beaches: [{
+			name: {
+				type: String,
+				trim: true
+			},
+			state: {
+				type: String,
+				trim: true
+			},
+			latitude: {
+				type: Number				
+			},
+			longitude: {
+				type: Number
+			}
+		}]
 	},
 	password: {
 		type: String,

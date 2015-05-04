@@ -4,8 +4,9 @@
  * Module dependencies.
  */
 var should = require('should'),
-	mongoose = require('mongoose'),
-	User = mongoose.model('User');
+		mongoose = require('mongoose'),
+		User = mongoose.model('User'),
+		faker = require('faker');
 
 /**
  * Globals
@@ -66,6 +67,22 @@ describe('User Model Unit Tests:', function() {
 				done();
 			});
 		});
+
+		it('should add a beach object to user preferences', function(done) {
+			// create beach preference object
+			var beach = {
+				name: faker.address.streetName(),
+				latitude: faker.address.latitude(),
+				longitude: faker.address.longitude(),
+				state: faker.address.state(),
+			};			
+			
+			user.save(function(){
+				user.preferences.beaches.push(beach);
+				done();
+			});
+		})
+
 	});
 
 	after(function(done) {
