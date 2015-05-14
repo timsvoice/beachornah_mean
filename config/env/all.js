@@ -29,7 +29,8 @@ module.exports = {
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/foundation/js/foundation.min.js',
 				'public/lib/ngAutocomplete/src/ngAutocomplete.js',				
-				'public/lib/angular-ui-slider/src/slider.js'
+				'public/lib/angular-ui-slider/src/slider.js',
+				'public/lib/angular-local-storage/dist/angular-local-storage.min.js'
 			]
 		},
 		css: [

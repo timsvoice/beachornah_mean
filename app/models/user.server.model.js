@@ -74,8 +74,14 @@ var UserSchema = new Schema({
 		}],
 		notifications: [{
 			day: {
-				type: String			
-			}			
+				type: Number
+			},
+			time: {
+				type: String
+			},
+			type: {
+				type: String
+			}		
 		}],
 		temps: {
 			air: {

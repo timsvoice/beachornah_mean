@@ -13,7 +13,8 @@ var ApplicationConfiguration = (function() {
 	'ui.router', 
 	'ui.utils',
 	'ngAutocomplete',
-	'ui.slider'
+	'ui.slider',
+	'LocalStorageModule'
 	];
 
 	// Add a new vertical module

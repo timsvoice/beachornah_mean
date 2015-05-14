@@ -1,8 +1,8 @@
 
 'use strict';
 
-angular.module('users').controller('BeachController', ['$scope', '$http', '$location', '$document','Authentication',
-  function($scope, $http, $location, $document, Authentication) {
+angular.module('users').controller('BeachController', ['$scope', '$http', '$location', 'localStorageService','Authentication',
+  function($scope, $http, $location, localStorageService, Authentication) {
     // This provides Authentication context.
     $scope.authentication = Authentication;
     $scope.userBeach = '';
@@ -11,6 +11,14 @@ angular.module('users').controller('BeachController', ['$scope', '$http', '$loca
       air: [75,95],
       water: [60,80]
       };
+
+    $scope.beach = function() {
+      localStorageService.set('key', 'val');
+      // capture long lat
+      // create http call to WWO
+      // store returned data
+      // redirect to beach display
+    };
 
     $scope.beachSelect = function() {
       // details from google places API response
@@ -36,19 +44,19 @@ angular.module('users').controller('BeachController', ['$scope', '$http', '$loca
     };    
 
     $scope.preferencesSelect = function() {
-      // details from google places API response
+      // set temp object
       var temp = {
         air: {
-          maxTemp: $scope.temp.air[0],
-          minTemp: $scope.temp.air[1]
+          minTemp: $scope.temp.air[0],
+          maxTemp: $scope.temp.air[1]
         },
         water: {
-          maxTemp: $scope.temp.water[0],
-          minTemp: $scope.temp.water[1]
+          minTemp: $scope.temp.water[0],
+          maxTemp: $scope.temp.water[1]
         }
       };
 
-
+      // set user
       var user = $scope.authentication.user;
       // save input from form
       $scope.authentication.user.preferences.temps = {
