@@ -81,10 +81,16 @@ var UserSchema = new Schema({
 			air: {
 				minTemp: {
 					type: Number
+				},
+				maxTemp: {
+					type: Number
 				}
 			},
 			water: {
 				minTemp: {
+					type: Number
+				},
+				maxTemp: {
 					type: Number
 				}
 			}

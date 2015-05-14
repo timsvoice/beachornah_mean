@@ -14,7 +14,7 @@ module.exports = {
 		lib: {
 			css: [
 				'public/lib/foundation/css/foundation.min.css',
-				'public/lib/jquery-ui/themes/smoothness/jquery-ui.css'
+				'public/lib/jquery-ui/themes/base/jquery-ui.css'
 			],
 			js: [
 				'public/lib/jquery/dist/jquery.min.js',

@@ -1,6 +1,6 @@
 <div class="row" ng-controller="BeachController">
   <div class="small-12 medium-12 large-12 columns">
-  <form class="row collapse">
+  <form class="row collapse" ng-submit="preferencesSelect()">
     <h2 class="beach-title">Pick your temps</h2>
     <div class="row">
       <div ui-slider="{range: true}" min="50" max="120" step="5" ng-model="temp.air"></div>
