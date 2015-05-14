@@ -26,7 +26,8 @@ describe('User Model Unit Tests:', function() {
 			username: 'username',
 			password: 'password',
 			preferences: {
-				beaches: []
+				beaches: [],
+				notifications: []
 			},
 			provider: 'local'
 		});
@@ -38,7 +39,8 @@ describe('User Model Unit Tests:', function() {
 			username: 'username',
 			password: 'password',
 			preferences: {
-				beaches: []
+				beaches: [],
+				notifications: []
 			},
 			provider: 'local'
 		});
@@ -91,7 +93,22 @@ describe('User Model Unit Tests:', function() {
 				user.preferences.beaches[0].name.should.match(beach.name);
 				done();
 			});
-		})
+		});
+
+		it('should add two day objects to preferences', function(done) {
+			var dayOne = { day: 2 },
+					dayTwo = { day: 5 };
+
+			user.save(function(){
+				// push new notification preference to user preferences
+				user.preferences.notifications.push(dayOne, dayTwo);
+				console.log(user);
+				// set assertions
+				user.preferences.notifications[0].day.should.match(dayOne.day);
+				done();
+			});
+
+		});
 
 	});
 

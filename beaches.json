@@ -1,546 +1,678 @@
 {
   "NY": {
-    "beaches": { 
-      "Atlantic Beach":  {
-        "lat": 40.588994,
-        "long": -73.729021
+    "beaches": [ 
+      {
+          "name": "Atlantic Beach",
+          "lat": 40.588994,
+          "long": -73.729021
       },
-      "Brighton Beach":  {
-        "lat": 40.578071,
-        "long": -73.959656
-      },
-      "Coney Island":  {
-        "lat": 40.574926,
-        "long": -73.985941
-      },
-      "East Hampton":  {
-        "lat": 40.963434,
-        "long": -72.184801
-      },
-      "Fire Island": {
-        "lat": 40.6476,
-        "long": -73.145947
-      },
-      "Lido Beach":  {
-        "lat": 40.588993,
-        "long": -73.625407
-      },
-      "Long Beach":  {
-        "lat": 40.588437,
-        "long": -73.657908
-      },
-      "Montauk": {
-        "lat": 41.035935,
-        "long": -71.954515
-      },
-      "Ocean Beach": {
-        "lat": 40.646766,
-        "long": -73.157059
-      },
-      "Southampton": {
-        "lat": 40.884267,
-        "long": -72.38953
-      },
-      "Point Lookout": {
-        "lat": 40.592326,
-        "long": -73.580684
-      },
-      "Rockaway Beach":  {
-        "lat": 40.586725,
-        "long": -73.811499
-      },
-      "Westhampton Beach": {
-        "lat": 40.80938 ,
-        "long": -72.645828
-      },
-      "West Hampton Dunes":  {
-        "lat": 40.775933,
-        "long": -72.715376
-      }
-    }
+      {
+          "name": "Brighton Beach",
+          "lat": 40.578071,
+          "long": -73.959656
+        },
+        {
+          "name": "Coney Island",
+          "lat": 40.574926,
+          "long": -73.985941
+        },
+        {
+          "name": "East Hampton",
+          "lat": 40.963434,
+          "long": -72.184801
+        },
+        {
+          "name": "Fire Island",
+          "lat": 40.6476,
+          "long": -73.145947
+        },
+        {
+          "name": "Lido Beach",
+          "lat": 40.588993,
+          "long": -73.625407
+        },
+        {
+          "name": "Long Beach",
+          "lat": 40.588437,
+          "long": -73.657908
+        },
+        {
+          "name": "Montauk",
+          "lat": 41.03535,
+          "long": -71.954515
+        },
+        {
+          "name": "Ocean Beach",
+          "lat": 40.646766,
+          "long": -73.157059
+        },
+        {
+          "name": "Southampton",
+          "lat": 40.884267,
+          "long": -72.38953
+        },
+        {
+          "name": "Point Lookout",
+          "lat": 40.592326,
+          "long": -73.580684
+        },
+        {
+          "name": "Rockaway Beach",
+          "lat": 40.586725,
+          "long": -73.811499
+        },
+        {
+          "name": "Westhampton Beach",
+          "lat": 40.80938 ,
+          "long": -72.645828
+        },
+        {
+          "name": "West Hampton Dunes",
+          "lat": 40.775933,
+          "long": -72.715376
+        }
+    ]
   },
   "CA": {
-    "beaches": {
-      "Alison Creek Beach": {
-        "lat": 33.597392,
-        "long": -117.741514
-      },
-      "Black's Beach": {
-        "lat": 32.889556,
-        "long": -117.253649
-      },
-      "Capistrano Beach": {
-        "lat":  33.459667,
-        "long": -117.669021
-      },
-      "Carlsbad": {
-        "lat":  33.158093,
-        "long": -117.350594
-      },
-      "Carmel-by-the-Sea": {
-        "lat": 36.555239,
-        "long": -121.923288
-      },
-      "Carpinteria": {
-        "lat": 34.398884,
-        "long": -119.518456
-      },
-      "Children's Pool Beach, La Jolla": {
-        "lat": 32.847719,
-        "long": -117.278289
-      },
-      "Corona del Mar": {
-        "lat":  33.59786 ,
-        "long": -117.873014
-      },
-      "Coronado": {
-        "lat":  32.685885,
-        "long": -117.183089
-      },
-      "Dana Point": {
-        "lat":  33.466972,
-        "long": -117.698107
-      },
-      "Del Mar": {
-        "lat": 32.959489,
-        "long": -117.265315
-      },
-      "Encinitas": {
-        "lat": 33.036987,
-        "long": -117.291982
-      },
-      "Grover Beach": {
-        "lat":  35.121642,
-        "long": -120.621282
-      },
-      "Hermosa Beach": {
-        "lat": 33.862237,
-        "long": -118.399519
-      },
-      "Huntington Beach": {
-        "lat":  33.660297,
-        "long": -117.999227
-      },
-      "Imperial Beach": {
-        "lat":  32.583944,
-        "long": -117.113085
-      },
-      "La Jolla, San Diego": {
-        "lat": 32.832811,
-        "long": -117.271272
-      },
-      "La Jolla Cove, La Jolla": {
-        "lat": 32.850642,
-        "long": -117.273173
-      },
-      "La Jolla Shores, La Jolla": {
-        "lat": 32.857706,
-        "long": -117.252914
-      },
-      "Laguna Beach": {
-        "lat":  33.54224,
-        "long":  -117.78311
-      },
-      "Long Beach": {
-        "lat":  33.77005 ,
-        "long": -118.193739
-      },
-      "Malibu": {
-        "lat":  34.025922,
-        "long": -118.779757
-      },
-      "Manhattan Beach": {
-        "lat": 33.884736,
-        "long": -118.410909
-      },
-      "Mission Beach, San Diego": {
-        "lat":  32.770653,
-        "long": -117.251445
-      },
-      "Monterey": {
-        "lat":  36.600238,
-        "long": -121.894676
-      },
-      "Morro Bay": {
-        "lat": 35.365945,
-        "long": -120.849992
-      },
-      "Newport Beach": {
-        "lat": 33.61891 ,
-        "long": -117.928947
-      },
-      "Ocean Beach, San Diego": {
-        "lat":  32.749499,
-        "long": -117.247035
-      },
-      "Ocean Beach, San Francisco": {
-        "lat":  37.759392,
-        "long": -122.510734
-      },
-      "Oceanside": {
-        "lat": 33.19587 ,
-        "long": -117.379483
-      },
-      "Oxnard": {
-        "lat":  34.197505,
-        "long": -119.177052
-      },
-      "Pacific Beach, San Diego": {
-        "lat":  32.802458,
-        "long": -117.235585
-      },
-      "Pacific Grove": {
-        "lat": 36.617737,
-        "long": -121.916622
-      },
-      "Palos Verdes Estates": {
-        "lat":  33.800571,
-        "long": -118.390074
-      },
-      "Redondo Beach": {
-        "lat": 33.849182,
-        "long": -118.388408
-      },
-      "San Clemente": {
-        "lat":  33.426973,
-        "long": -117.611992
-      },
-      "San Onofre Beach": {
-        "lat":  33.40384,
-        "long":  -117.60269
-      },
-      "San Pedro, Los Angeles": {
-        "lat":  33.736062,
-        "long": -118.292246
-      },
-      "Santa Barbara": {
-        "lat": 34.42083,
-        "long":  -119.69819
-      },
-      "Santa Cruz": {
-        "lat":  36.974117,
-        "long": -122.030796
-      },
-      "Santa Monica": {
-        "lat":  34.019454,
-        "long": -118.491191
-      },
-      "Solana Beach": {
-        "lat":  32.991155,
-        "long": -117.271148
-      },
-      "Sunset Beach": {
-        "lat":  33.720734,
-        "long": -118.073574
-      },
-      "Surfside": {
-        "lat":  33.727796,
-        "long": -118.082286
-      },
-      "Torrance": {
-        "lat":  33.835849,
-        "long": -118.340629
-      },
-      "Ventura": {
-        "lat": 34.274646,
-        "long": -119.229032
-      },
-      "Venice": {
-        "lat":  33.985047,
-        "long": -118.469483
-      }
-    } 
+    "beaches": [
+        {
+          "name": "Alison Creek Beach",
+          "lat": 33.597392,
+          "long": -117.741514
+        },
+        {
+          "name": "Black's Beach",
+          "lat": 32.889556,
+          "long": -117.253649
+        },
+        {
+          "name": "Capistrano Beach",
+          "lat":  33.459667,
+          "long": -117.669021
+        },
+        {
+          "name": "Carlsbad",
+          "lat":  33.15893,
+          "long": -117.350594
+        },
+        {
+          "name": "Carmel-by-the-Sea",
+          "lat": 36.555239,
+          "long": -121.923288
+        },
+        {
+          "name": "Carpinteria",
+          "lat": 34.398884,
+          "long": -119.518456
+        },
+        {
+          "name": "Children's Pool Beach, La Jolla",
+          "lat": 32.847719,
+          "long": -117.278289
+        },
+        {
+          "name": "Corona del Mar",
+          "lat":  33.59786 ,
+          "long": -117.873014
+        },
+        {
+          "name": "Coronado",
+          "lat":  32.68585,
+          "long": -117.183089
+        },
+        {
+          "name": "Dana Point",
+          "lat":  33.46697,
+          "long": -117.698107
+        },
+        {
+          "name": "Del Mar",
+          "lat": 32.95989,
+          "long": -117.265315
+        },
+        {
+          "name": "Encinitas",
+          "lat": 33.03698,
+          "long": -117.291982
+        },
+        {
+          "name": "Grover Beach",
+          "lat":  35.121642,
+          "long": -120.621282
+        },
+        {
+          "name": "Hermosa Beach",
+          "lat": 33.862237,
+          "long": -118.399519
+        },
+        {
+          "name": "Huntington Beach",
+          "lat":  33.660297,
+          "long": -117.999227
+        },
+        {
+          "name": "Imperial Beach",
+          "lat":  32.583944,
+          "long": -117.113085
+        },
+        {
+          "name": "La Jolla, San Diego",
+          "lat": 32.832811,
+          "long": -117.271272
+        },
+        {
+          "name": "La Jolla Cove, La Jolla",
+          "lat": 32.850642,
+          "long": -117.273173
+        },
+        {
+          "name": "La Jolla Shores, La Jolla",
+          "lat": 32.857706,
+          "long": -117.252914
+        },
+        {
+          "name": "Laguna Beach",
+          "lat":  33.54224,
+          "long":  -117.78311
+        },
+        {
+          "name": "Long Beach",
+          "lat":  33.77005,
+          "long": -118.193739
+        },
+        {
+          "name": "Malibu",
+          "lat":  34.05922,
+          "long": -118.779757
+        },
+        {
+          "name": "Manhattan Beach",
+          "lat": 33.884736,
+          "long": -118.410909
+        },
+        {
+          "name": "Mission Beach, San Diego",
+          "lat":  32.770653,
+          "long": -117.251445
+        },
+        {
+          "name": "Monterey",
+          "lat":  36.60038,
+          "long": -121.894676
+        },
+        {
+          "name": "Morro Bay",
+          "lat": 35.36594,
+          "long": -120.849992
+        },
+        {
+          "name": "Newport Beach",
+          "lat": 33.61891 ,
+          "long": -117.928947
+        },
+        {
+          "name": "Ocean Beach, San Diego",
+          "lat":  32.749499,
+          "long": -117.247035
+        },
+        {
+          "name": "Ocean Beach, San Francisco",
+          "lat":  37.759392,
+          "long": -122.510734
+        },
+        {
+          "name": "Oceanside",
+          "lat": 33.19587,
+          "long": -117.379483
+        },
+        {
+          "name": "Oxnard",
+          "lat":  34.17505,
+          "long": -119.177052
+        },
+        {
+          "name": "Pacific Beach, San Diego",
+          "lat":  32.802458,
+          "long": -117.235585
+        },
+        {
+          "name": "Pacific Grove",
+          "lat": 36.617737,
+          "long": -121.916622
+        },
+        {
+          "name": "Palos Verdes Estates",
+          "lat":  33.800571,
+          "long": -118.390074
+        },
+        {
+          "name": "Redondo Beach",
+          "lat": 33.849182,
+          "long": -118.388408
+        },
+        {
+          "name": "San Clemente",
+          "lat":  33.426973,
+          "long": -117.611992
+        },
+        {
+          "name": "San Onofre Beach",
+          "lat":  33.40384,
+          "long":  -117.60269
+        },
+        {
+          "name": "San Pedro, Los Angeles",
+          "lat":  33.736062,
+          "long": -118.292246
+        },
+        {
+          "name": "Santa Barbara",
+          "lat": 34.42083,
+          "long":  -119.69819
+        },
+        {
+          "name": "Santa Cruz",
+          "lat":  36.97411,
+          "long": -122.030796
+        },
+        {
+          "name": "Santa Monica",
+          "lat":  34.019454,
+          "long": -118.491191
+        },
+        {
+          "name": "Solana Beach",
+          "lat":  32.991155,
+          "long": -117.271148
+        },
+        {
+          "name": "Sunset Beach",
+          "lat":  33.720734,
+          "long": -118.073574
+        },
+        {
+          "name": "Surfside",
+          "lat":  33.72796,
+          "long": -118.082286
+        },
+        {
+          "name": "Torrance",
+          "lat":  33.83549,
+          "long": -118.340629
+        },
+        {
+          "name": "Ventura",
+          "lat": 34.27446,
+          "long": -119.229032
+        },
+        {
+          "name": "Venice",
+          "lat":  33.95047,
+          "long": -118.469483          
+        }
+      ] 
   },
   "NJ": {
-    "beaches": {
-      "Allenhurst": {
-        "lat":  40.236224,
-        "long": -74.000693
-      },
-      "Asbury Park": {
-        "lat": 40.220391,
-        "long": -74.012082
-      },
-      "Atlantic City": {
-        "lat": 39.364283,
-        "long": -74.422927
-      },
-      "Avalon": {
-        "lat":  39.101225,
-        "long": -74.717662
-      },
-      "Avon-by-the-Sea": {
-        "lat": 40.192336,
-        "long": -74.01597
-      },
-      "Barnegat Light": {
-        "lat":  39.75762 ,
-        "long": -74.106247
-      },
-      "Bay Head": {
-        "lat":  40.071783,
-        "long": -74.054304
-      },
-      "Beach Haven": {
-        "lat": 39.559285,
-        "long": -74.243196
-      },
-      "Belmar": {
-        "lat":  40.178447,
-        "long": -74.021804
-      },
-      "Berkeley": {
-        "lat":  39.8972,
-        "long": -74.182712
-      },
-      "Bradley Beach": {
-        "lat": 40.202335,
-        "long": -74.012081
-      },
-      "Brick": {
-        "lat": 40.057838,
-        "long": -74.137183
-      },
-      "Brigantine": {
-        "lat":  39.410117,
-        "long": -74.364591
-      },
-      "Cape May": {
-        "lat":  38.935113,
-        "long": -74.906005
-      },
-      "Cape May Point": {
-        "lat":  38.937335,
-        "long": -74.969342
-      },
-      "Corson's Inlet State Park": {
-        "lat": 39.215007,
-        "long": -74.644026
-      },
-      "Deal": {
-        "lat":  40.243168,
-        "long": -74.000693
-      },
-      "Gunnison Beach": {
-        "lat":  40.058324,
-        "long": -74.405661
-      },
-      "Harvey Cedars": {
-        "lat": 39.706231,
-        "long": -74.134025
-      },
-      "Island Beach State Park": {
-        "lat": 39.828568,
-        "long": -74.092007
-      },
-      "Lavallette": {
-        "lat":  39.970396,
-        "long": -74.068747
-      },
-      "Loch Arbour": {
-        "lat": 40.23289 ,
-        "long": -74.00097
-      },
-      "Long Beach": {
-        "lat":  39.615501,
-        "long": -74.199545
-      },
-      "Long Branch": {
-        "lat": 40.304278, 
-        "long": -73.99236
-      },
-      "Longport": {
-        "lat":  39.314283,
-        "long": -74.524876
-      },
-      "Manasquan": {
-        "lat": 40.113693,
-        "long": -74.037635
-      },
-      "Mantoloking": {
-        "lat": 40.039284,
-        "long": -74.049859
-      },
-      "Margate City": {
-        "lat":  39.327894,
-        "long": -74.503486
-      },
-      "Monmouth Beach": {
-        "lat":  40.330388, 
-        "long": -73.981526
-      },  
-      "Neptune": {
-        "lat": 40.209122,
-        "long": -74.038627
-      },
-      "North Wildwood": {
-        "lat":  39.000669,
-        "long": -74.799333
-      },
-      "Ocean City": {
-        "lat":  39.277616,
-        "long": -74.5746
-      },
-      "Ocean Grove": {
-        "lat": 40.212058,
-        "long": -74.006526
-      },
-      "Ortley Beach": {
-        "lat":  39.955674,
-        "long": -74.074303
-      },
-      "Point Pleasant Beach": {
-        "lat":  40.091227,
-        "long": -74.047915
-      },
-      "Sandy Hook": {
-        "lat":  40.478162,
-        "long": -74.016266
-      },
-      "Sea Bright": {
-        "lat":  40.361499,
-        "long": -73.974026
-      },
-      "Sea Girt": {
-        "lat":  40.132059,
-        "long": -74.034581
-      },
-      "Sea Isle City": {
-        "lat": 39.153448,
-        "long": -74.692939
-      },
-      "Seaside Heights": {
-        "lat": 39.944285,
-        "long": -74.072914
-      },
-      "Seaside Park": {
-        "lat":  39.926785,
-        "long": -74.077081
-      },
-      "Seven Presidents Oceanfront Park" : {
-        "lat":  40.314532,
-        "long":-73.976955
-      },
-      "Ship Bottom": {
-        "lat": 39.642897,
-        "long": -74.180416
-      },
-      "Spring Lake": {
-        "lat": 40.153448,
-        "long": -74.028192
-      },
-      "Stone Harbor": {
-        "lat":  39.046407,
-        "long": -74.764361
-      },
-      "Strathmere": {
-        "lat":  39.195202,
-        "long": -74.659006
-      },
-      "Surf City": {
-        "lat": 39.662064,
-        "long": -74.165138
-      },
-      "Toms River": {
-        "lat":  39.953736,
-        "long": -74.197946
-      },
-      "Upper Township": {
-        "lat":  39.232601,
-        "long": -74.710296
-      },
-      "Ventnor City": {
-        "lat":  39.340394,
-        "long": -74.477373
-      },
-      "Villas": {
-        "lat":  39.017252,
-        "long": -74.941631
-      },
-      "West Wildwood": {
-        "lat": 39.002335,
-        "long": -74.824334
-      },
-      "Wildwood": {
-        "lat":  38.99178 ,
-        "long": -74.814889
-      },
-      "Wildwood Crest": {
-        "lat":  38.974835,
-        "long": -74.833502
-      }
-    } 
+    "beaches": [
+        {
+          "name": "Allenhurst",
+          "lat":  40.23622,
+          "long": -74.000693
+        },
+        {
+          "name": "Asbury Park",
+          "lat": 40.220391,
+          "long": -74.012082
+        },
+        {
+          "name": "Atlantic City",
+          "lat": 39.364283,
+          "long": -74.422927
+        },
+        {
+          "name": "Avalon",
+          "lat":  39.11225,
+          "long": -74.717662
+        },
+        {
+          "name": "Avon-by-the-Sea",
+          "lat": 40.192336,
+          "long": -74.01597
+        },
+        {
+          "name": "Barnegat Light",
+          "lat":  39.75762 ,
+          "long": -74.106247
+        },
+        {
+          "name": "Bay Head",
+          "lat":  40.07183,
+          "long": -74.054304
+        },
+        {
+          "name": "Beach Haven",
+          "lat": 39.559285,
+          "long": -74.243196
+        },
+        {
+          "name": "Belmar",
+          "lat":  40.18447,
+          "long": -74.021804
+        },
+        {
+          "name": "Berkeley",
+          "lat":  39.897,
+          "long": -74.182712
+        },
+        {
+          "name": "Bradley Beach",
+          "lat": 40.202335,
+          "long": -74.012081
+        },
+        {
+          "name": "Brick",
+          "lat": 40.07838,
+          "long": -74.137183
+        },
+        {
+          "name": "Brigantine",
+          "lat":  39.41011,
+          "long": -74.364591
+        },
+        {
+          "name": "Cape May",
+          "lat":  38.93513,
+          "long": -74.906005
+        },
+        {
+          "name": "Cape May Point",
+          "lat":  38.937335,
+          "long": -74.969342
+        },
+        {
+          "name": "Corson's Inlet State Park",
+          "lat": 39.215007,
+          "long": -74.644026
+        },
+        {
+          "name": "Deal",
+          "lat":  40243168,
+          "long": -74.000693
+        },
+        {
+          "name": "Gunnison Beach",
+          "lat":  40.058324,
+          "long": -74.405661
+        },
+        {
+          "name": "Harvey Cedars",
+          "lat": 39.706231,
+          "long": -74.134025
+        },
+        {
+          "name": "Island Beach State Park",
+          "lat": 39.828568,
+          "long": -74.092007
+        },
+        {
+          "name": "Lavallette",
+          "lat":  39.97039,
+          "long": -74.068747
+        },
+        {
+          "name": "Loch Arbour",
+          "lat": 40.23289 ,
+          "long": -74.00097
+        },
+        {
+          "name": "Long Beach",
+          "lat":  39.61550,
+          "long": -74.199545
+        },
+        {
+          "name": "Long Branch",
+          "lat": 40.304278,
+          "long": -73.99236
+        },
+        {
+          "name": "Longport",
+          "lat":  39.31483,
+          "long": -74.524876
+        },
+        {
+          "name": "Manasquan",
+          "lat": 40.11369,
+          "long": -74.037635
+        },
+        {
+          "name": "Mantoloking",
+          "lat": 40.039284,
+          "long": -74.049859
+        },
+        {
+          "name": "Margate City",
+          "lat":  39.327894,
+          "long": -74.503486
+        },
+        {
+          "name": "Monmouth Beach",
+          "lat":  40.330388,
+          "long": -73.981526
+        },
+        { 
+          "Neptune": {
+            "lat": 40.209122,
+            "long": -74.038627
+          }
+        },
+        {
+          "name": "North Wildwood",
+          "lat":  39.000669,
+          "long": -74.799333
+        },
+        {
+          "name": "Ocean City",
+          "lat":  39.27761,
+          "long": -74.5746
+        },
+        {
+          "name": "Ocean Grove",
+          "lat": 40.212058,
+          "long": -74.006526
+        },
+        {
+          "name": "Ortley Beach",
+          "lat":  39.955674,
+          "long": -74.074303
+        },
+        {
+          "name": "Point Pleasant Beach",
+          "lat":  40.091227,
+          "long": -74.047915
+        },
+        {
+          "name": "Sandy Hook",
+          "lat":  40.47816,
+          "long": -74.016266
+        },
+        {
+          "name": "Sea Bright",
+          "lat":  40.36149,
+          "long": -73.974026
+        },
+        {
+          "name": "Sea Girt",
+          "lat":  40.13259,
+          "long": -74.034581
+        },
+        {
+          "name": "Sea Isle City",
+          "lat": 39.153448,
+          "long": -74.692939
+        },
+        {
+          "name": "Seaside Heights",
+          "lat": 39.944285,
+          "long": -74.072914
+        },
+        {
+          "name": "Seaside Park",
+          "lat":  39.926785,
+          "long": -74.077081
+        },
+        {
+          "name": "Seven Presidents Oceanfront Park",
+          "lat":  40.314532,
+          "long":-73.976955
+        },
+        {
+          "name": "Ship Bottom",
+          "lat": 39.642897,
+          "long": -74.180416
+        },
+        {
+          "name": "Spring Lake",
+          "lat": 40.153448,
+          "long": -74.028192
+        },
+        {
+          "name": "Stone Harbor",
+          "lat":  39.046407,
+          "long": -74.764361
+        },
+        {
+          "name": "Strathmere",
+          "lat":  39.19520,
+          "long": -74.659006
+        },
+        {
+          "name": "Surf City",
+          "lat": 39.66206,
+          "long": -74.165138
+        },
+        {
+          "name": "Toms River",
+          "lat":  39.95373,
+          "long": -74.197946
+        },
+        {
+          "name": "Upper Township",
+          "lat":  39.232601,
+          "long": -74.710296
+        },
+        {
+          "name": "Ventnor City",
+          "lat":  39.340394,
+          "long": -74.477373
+        },
+        {
+          "name": "Villas",
+          "lat":  39.07252,
+          "long": -74.941631
+        },
+        {
+          "name": "West Wildwood",
+          "lat": 39.002335,
+          "long": -74.824334
+        },
+        {
+          "name": "Wildwood",
+          "lat":  38.9918 ,
+          "long": -74.814889
+        },
+        {
+          "name": "Wildwood Crest",
+          "lat":  38.974835,
+          "long": -74.833502              
+        }
+    ] 
   },
   "RI": {
-    "beaches": {
-      "Matunuck": { 
-        "lat":  41.378435, 
-        "long": -71.545892
-      },
-      "Misquamicut State Beach": { 
-        "lat": 41.323711, 
-        "long": -71.802845
-      },
-      "Narragansett": { 
-        "lat":  41.450084, 
-        "long": -71.449503
-      },
-      "Point Judith": { 
-        "lat":  41.36538 , 
-        "long": -71.486722
-      },
-      "Quonochontaug": { 
-        "lat": 41.339544, 
-        "long": -71.713914
-      },
-      "Weekapaug": { 
-        "lat": 41.33083 , 
-        "long": -71.75556
-      }
-    }
+    "beaches": [
+        {
+          "name": "Matunuck",
+          "lat":  41.37845, 
+          "long": -71.545892
+        },
+        {
+          "name": "Misquamicut State Beach",
+          "lat": 41.323711,
+          "long": -71.802845
+        },
+        {
+          "name": "Narragansett",
+          "lat":  41.450084,
+          "long": -71.449503
+        },
+        {
+          "name": "Point Judith",
+          "lat":  41.36538 ,
+          "long": -71.486722
+        },
+        {
+          "name": "Quonochontaug",
+          "lat": 41.339544,
+          "long": -71.713914
+        },
+        {
+          "name": "Weekapaug",
+          "lat": 41.33083  ,
+          "long": -71.75556
+        }
+    ]
   },
   "OR": {
-    "beaches": {
-      "Cannon Beach": {
-        "lat":  45.891774,
-        "long":  -123.961527
-      },
-      "Depoe Bay": {
-        "lat": 44.808447,
-        "long": -124.063171
-      },
-      "Gold Beach": {
-        "lat":  42.407333,
-        "long":  -124.421774
-      },
-      "Lincoln City": {
-        "lat":  44.958164,
-        "long":  -124.017891
-      },
-      "Manzanita": {
-        "lat": 45.71844 ,
-        "long": -123.935135
-      },
-      "Newport": {
-        "lat": 44.636784,
-        "long": -124.05345
-      },
-      "Port Orford": {
-        "lat": 42.745664,
-        "long": -124.497327
-      },
-      "Rockaway Beach":  {
-        "lat":  45.613438,
-        "long":  -123.942911
-      },
-      "Seaside": {
-        "lat": 45.993164,
-        "long": -123.922638
-      },
-      "Yachats": {
-        "lat": 44.311231,
-        "long": -124.104842
-      }
-    }
+    "beaches": [
+        {
+          "name": "Cannon Beach",
+          "lat":  45.891774,
+          "long":  -123.961527
+        },
+        {
+          "name": "Depoe Bay",
+          "lat": 44.80844,
+          "long": -124.063171
+        },
+        {
+          "name": "Gold Beach",
+          "lat":  42.40733,
+          "long":  -124.421774
+        },
+        {
+          "name": "Lincoln City",
+          "lat":  44.958164,
+          "long":  -124.017891
+        },
+        {
+          "name": "Manzanita",
+          "lat": 45.71844,
+          "long": -123.935135
+        },
+        {
+          "name": "Newport",
+          "lat": 44.63684,
+          "long": -124.05345
+        },
+        {
+          "name": "Port Orford",
+          "lat": 42.745664,
+          "long": -124.497327
+        },
+        {
+          "name": "Rockaway Beach",
+          "lat":  45.613438,
+          "long":  -123.942911
+        },
+        {
+          "name": "Seaside",
+          "lat": 45.99364,
+          "long": -123.922638
+        },
+        {
+          "name": "Yachat=s",
+          "lat": 44.31131,
+          "long": -124.104842              
+        }
+    ]
   }
 }

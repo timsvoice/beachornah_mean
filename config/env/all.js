@@ -13,9 +13,12 @@ module.exports = {
 	assets: {
 		lib: {
 			css: [
-				'public/lib/foundation/css/foundation.min.css'
+				'public/lib/foundation/css/foundation.min.css',
+				'public/lib/jquery-ui/themes/smoothness/jquery-ui.css'
 			],
 			js: [
+				'public/lib/jquery/dist/jquery.min.js',
+				'public/lib/jquery-ui/ui/minified/jquery-ui.min.js',
 				'public/lib/angular/angular.js',
 				'public/lib/angular-resource/angular-resource.js', 
 				'public/lib/angular-cookies/angular-cookies.js', 
@@ -24,8 +27,9 @@ module.exports = {
 				'public/lib/angular-sanitize/angular-sanitize.js', 
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/jquery/dist/jquery.min.js',
-				'public/lib/foundation/js/foundation.min.js'
+				'public/lib/foundation/js/foundation.min.js',
+				'public/lib/ngAutocomplete/src/ngAutocomplete.js',				
+				'public/lib/angular-ui-slider/src/slider.js'
 			]
 		},
 		css: [

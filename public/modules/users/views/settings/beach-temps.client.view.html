@@ -1,0 +1,24 @@
+<div class="row" ng-controller="BeachController">
+  <div class="small-12 medium-12 large-12 columns">
+  <form class="row collapse">
+    <h2 class="beach-title">Pick your temps</h2>
+    <div class="row">
+      <div ui-slider="{range: true}" min="50" max="120" step="5" ng-model="temp.air"></div>
+      <!-- <input type="text" ng-model="temp.air" /> -->
+      <p class="beach-temp-air-min">Minimum: {{temp.air[0]}}</p>
+      <p class="beach-temp-air-max">Maximum: {{temp.air[1]}}</p>
+    </div>
+    <div class="row">
+      <div ui-slider="{range: true}" min="60" max="90" step="5" ng-model="temp.water"></div>
+      <p class="beach-temp-water-min">Minimum: {{temp.water[0]}}</p>
+      <p class="beach-temp-water-max">Maximum: {{temp.water[1]}}</p>
+    </div>
+
+
+    <div class="small-3 columns">
+      <button class="button" type="submit">submit</button>
+    </div>
+
+  </form>
+  </div>
+</div>

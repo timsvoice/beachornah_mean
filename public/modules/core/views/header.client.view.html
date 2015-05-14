@@ -1,4 +1,4 @@
-  <nav class="top-bar" data-topbar data-ng-controller="HeaderController">
+  <nav class="top-bar" data-topbar ng-controller="HeaderController">
     <ul class="title-area">
       <li class="name">
         <h1><a href="/#!/" class="navbar-brand">Beach or Nah</a></h1>
@@ -22,7 +22,7 @@
 			<li>
 				<a href="/#!/settings/accounts">Manage Social Accounts</a>
 			</li>
-			<li data-ng-show="authentication.user.provider === 'local'">
+			<li ng-show="authentication.user.provider === 'local'">
 				<a href="/#!/settings/password">Change Password</a>
 			</li>
 			<li class="divider"></li>

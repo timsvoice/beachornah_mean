@@ -61,7 +61,7 @@ var UserSchema = new Schema({
 				type: String,
 				trim: true
 			},
-			state: {
+			place_id: {
 				type: String,
 				trim: true
 			},
@@ -71,7 +71,24 @@ var UserSchema = new Schema({
 			longitude: {
 				type: Number
 			}
-		}]
+		}],
+		notifications: [{
+			day: {
+				type: String			
+			}			
+		}],
+		temps: {
+			air: {
+				minTemp: {
+					type: Number
+				}
+			},
+			water: {
+				minTemp: {
+					type: Number
+				}
+			}
+		}
 	},
 	password: {
 		type: String,

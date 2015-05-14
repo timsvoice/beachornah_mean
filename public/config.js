@@ -11,7 +11,9 @@ var ApplicationConfiguration = (function() {
 	'ngTouch',
 	'ngSanitize',
 	'ui.router', 
-	'ui.utils'
+	'ui.utils',
+	'ngAutocomplete',
+	'ui.slider'
 	];
 
 	// Add a new vertical module
