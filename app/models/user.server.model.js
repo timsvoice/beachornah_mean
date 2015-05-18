@@ -26,18 +26,6 @@ var validateLocalStrategyPassword = function(password) {
  */
 
 var UserSchema = new Schema({
-	firstName: {
-		type: String,
-		trim: true,
-		default: '',
-		validate: [validateLocalStrategyProperty, 'Please fill in your first name']
-	},
-	lastName: {
-		type: String,
-		trim: true,
-		default: '',
-		validate: [validateLocalStrategyProperty, 'Please fill in your last name']
-	},
 	displayName: {
 		type: String,
 		trim: true
@@ -48,12 +36,6 @@ var UserSchema = new Schema({
 		default: '',
 		validate: [validateLocalStrategyProperty, 'Please fill in your email'],
 		match: [/.+\@.+\..+/, 'Please fill a valid email address']
-	},
-	username: {
-		type: String,
-		unique: 'testing error message',
-		required: 'Please fill in a username',
-		trim: true
 	},
 	preferences: {
 		beaches: [{
@@ -70,19 +52,45 @@ var UserSchema = new Schema({
 			},
 			longitude: {
 				type: Number
+			},
+			favorite: {
+				type: Boolean
 			}
 		}],
-		notifications: [{
-			day: {
-				type: Number
+		notifications: {
+			monday: {
+				type: Boolean,
+				default: false
 			},
-			time: {
-				type: String
+			tuesday: {
+				type: Boolean,
+				default: false
 			},
-			type: {
-				type: String
-			}		
-		}],
+			wednesday: {
+				type: Boolean,
+				default: false
+			},
+			thursday: {
+				type: Boolean,
+				default: false
+			},
+			friday: {
+				type: Boolean,
+				default: false
+			},
+			saturday: {
+				type: Boolean,
+				default: false
+			},
+			sunday: {
+				type: Boolean,
+				default: false
+			},
+			fridayReport: {
+				type: Boolean,
+				default: false
+			}
+		},
 		temps: {
 			air: {
 				minTemp: {

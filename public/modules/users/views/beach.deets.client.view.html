@@ -1,0 +1,43 @@
+<div class="beach-rectangle">
+  <h4 class="beach-name">{{beachData.name}}</h4>
+  <div class="beach-time">
+    <div class="beach-time-icon">
+      <img src="{{weather.icons.900}}" alt="">
+    </div>
+    <div class="beach-time">
+      <a ng-click="weatherUpdate(900)">9AM</a>
+    </div>
+    <div class="beach-time-icon">
+      <img src="{{weather.icons.1200}}" alt="">
+    </div>
+    <div class="beach-time">
+      <a ng-click="weatherUpdate(1200)">12PM</a>
+    </div>
+    <div class="beach-time-icon">
+      <img src="{{weather.icons.1500}}" alt="">
+    </div>      
+    <div class="beach-time">
+      <a ng-click="weatherUpdate(1500)">3PM</a>
+    </div>
+  </div>
+  <div class="beach-cloud-coverage">
+    <div  class="beach-cloud-coverage-cloud" 
+          ng-style="{'opacity': currentWeather.cloudCover/100 }">
+      <img src="/modules/users/img/icons/cloud.png" alt="">
+    </div>
+    <div class="beach-cloud-coverage-percentage"><h4>{{currentWeather.cloudCover}}%</h4></div>
+    <div class="beach-cloud-coverage-title"><h5>Cloud Coverage</h5></div>
+  </div>
+  <div class="beach-air">
+    <div class="beach-air-temp"><h2>{{currentWeather.airTemp}}</h2></div>
+    <div class="beach-air-description"><h3>{{currentWeather.weatherDescription}}</h3></div>
+    <div class="beach-air-wind"><h4>{{currentWeather.windSpeed}}mph Wind</h4></div>
+  </div>
+  <div class="beach-water">
+    <div class="beach-water-temp"><h2>{{currentWeather.waterTemp}}</h2></div>
+    <div class="beach-water-waves"><h3>Wave Height: {{currentWeather.waveHeight}}ft</h3></div>
+    <div class="beach-water-interval"><h4>Interval: {{currentWeather.waveInterval}} sec</h4></div>
+  </div>
+</div>
+{{filterTest}}
+<a ui-sref="beach.recommendation">recommendation</a>

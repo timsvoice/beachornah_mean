@@ -1,0 +1,34 @@
+<div class="" ng-controller="BeachController">
+  <div class="beach-times">
+  <form class="beach-times-form" ng-submit="timesPicker()">
+    <div class="beach-times-form-days"> 
+      <input id="monday" type="checkbox" ng-model="preferences.monday">
+        <label for="monday">Monday</label>
+      <input id="tuesday" type="checkbox" ng-model="preferences.tuesday">
+        <label for="tuesday">Tuesday</label>
+      <input id="Wednesday" type="checkbox" ng-model="preferences.wednesday">
+        <label for="Wednesday">Wednesday</label>
+      <input id="Thursday" type="checkbox" ng-model="preferences.thursday">
+        <label for="Thursday">Thursday</label>
+      <input id="Friday" type="checkbox" ng-model="preferences.friday">
+        <label for="Friday">Friday</label>
+      <input id="Saturday" type="checkbox" ng-model="preferences.saturday">
+        <label for="Saturday">Saturday</label>
+      <input id="Sunday" type="checkbox" ng-model="preferences.sunday">
+        <label for="Sunday">Sunday</label>            
+    </div>
+    {{preferences.monday}}
+    <div class="beach-times-form-report">
+      <h3>How about a weekend report on Friday mornings?</h3>
+      <div class="switch">
+        no thanks<input id="friday-reoprt" type="checkbox" ng-model="preferences.fridayReport">
+        <label for="friday-reoprt"></label>yes please
+        {{preferences.fridayReport}}
+      </div> 
+    </div>
+    <div class="small-3 columns">
+      <button class="button postfix" type="submit">find</button>
+    </div>
+  </form>
+  </div>
+</div>

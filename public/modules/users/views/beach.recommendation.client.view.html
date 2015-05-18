@@ -1,0 +1,15 @@
+    <div class="beach-circle">    
+      <h4 class="beach-name">{{beachData.name}}</h4>      
+      <h2 class="beach-rec">{{recommendation}}</h2>
+      <div class="beach-time">
+        <div class="beach-time-icon"><img src="{{weather.icons.900}}" alt=""></div>
+        <div class="beach-time"><a ng-click="weatherUpdate(900)">9AM</a></div>
+        <div class="beach-time-icon"><img src="{{weather.icons.1200}}" alt=""></div>
+        <div class="beach-time"><a ng-click="weatherUpdate(1200)">12PM</a></div>
+        <div class="beach-time-icon"><img src="{{weather.icons.1500}}" alt=""></div>      
+        <div class="beach-time"><a ng-click="weatherUpdate(1500)">3PM</a></div>
+      </div>
+      <div class="beach-deets">
+        <a ui-sref="beach.deets">deets</a>
+      </div>
+    </div>

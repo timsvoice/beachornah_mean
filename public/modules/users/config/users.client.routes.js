@@ -7,11 +7,27 @@ angular.module('users').config(['$stateProvider',
 		$stateProvider.
 		state('beach', {
 			url: '/beach',
-			templateUrl: 'modules/users/views/settings/beach-picker.client.view.html'
+			templateUrl: 'modules/users/views/beach.client.view.html'
+		}).
+		state('picker', {
+			url: '/beach/picker',
+			templateUrl: 'modules/users/views/beach.picker.client.view.html'					
 		}).
 		state('temps', {
 			url: '/beach/temps',
-			templateUrl: 'modules/users/views/settings/beach-temps.client.view.html'
+			templateUrl: 'modules/users/views/beach.temps.client.view.html'
+		}).
+		state('times', {
+			url: '/beach/times',
+			templateUrl: 'modules/users/views/beach.times.client.view.html'					
+		}).
+		state('beach.recommendation', {
+			url: '/recommendation',
+			templateUrl: 'modules/users/views/beach.recommendation.client.view.html'					
+		}).
+		state('beach.deets', {
+			url: '/deets',
+			templateUrl: 'modules/users/views/beach.deets.client.view.html'					
 		}).
 		state('days', {
 			url: '/beach/days',

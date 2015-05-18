@@ -4,7 +4,10 @@
  * Module dependencies.
  */
 var should = require('should'),
+		request = require('supertest'),
+		app = require('../../server'),
 		mongoose = require('mongoose'),
+		agent = request.agent(app),
 		User = mongoose.model('User'),
 		faker = require('faker');
 
@@ -108,6 +111,23 @@ describe('User Model Unit Tests:', function() {
 				done();
 			});
 
+		});
+
+		it('should get weather data from WWO API', function(done){
+			var beach = {
+				name: 'Rock',
+				lat: 40.2,
+				long: 37.90
+			};
+			agent.get('/beach/weather')
+				.send(beach)
+				.expect(200)
+				.end(function(err, res) {
+					if (err) done(err);
+					// Call the assertion callback
+					res.body.should.be.an.Object.with.property('name', beach.name);					
+				});
+				done();
 		});
 
 	});

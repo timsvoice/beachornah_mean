@@ -1,14 +1,14 @@
 <div class="row" ng-controller="HomeController">
   <div class="small-12 medium-12 large-12 columns">
   <form class="row collapse" ng-submit="beach()">
-    <h2 class="beach-title">find your beach</h2>
-    
+    <h2 class="beach-title">find your beach</h2>    
     <div class="small-9 columns"> 
       <input type="text" placeholder="Find your Beach" ng-autocomplete ng-model="userBeach" details="details"/>
     </div>
     <div class="small-3 columns">
       <button class="button postfix" type="submit">find</button>
     </div>
+    <p class="beach-error">{{errorMessage}}</p>
   </form>
   </div>
 </div>

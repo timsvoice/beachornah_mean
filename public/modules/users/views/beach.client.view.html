@@ -1,0 +1,10 @@
+<!-- row -->
+<div class="beach" ng-controller="BeachController">
+  <div class="beach-container">    
+    <div ui-view></div>
+    <div class="beach-sinup" ng-hide="authentication.user">
+      <h5>Get this beach report in your mailbox, when you want it, set to your ideal conditions</h5>
+      <a href="/#!/beach/temps" class="signup button">Get Started</a>
+    </div>
+  </div>
+</div>

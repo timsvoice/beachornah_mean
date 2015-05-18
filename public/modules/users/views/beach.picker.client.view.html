@@ -1,8 +1,7 @@
 <div class="row" ng-controller="BeachController">
   <div class="small-12 medium-12 large-12 columns">
-  <form class="row collapse" ng-submit="beachSelect()">
-    <h2 class="beach-title">find your beach</h2>
-    
+  <form class="row collapse" ng-submit="beachPicker()">
+    <h2 class="beach-title">First, pick a beach you want to get a report for (don't worry, you can add more later)</h2>
     <div class="small-9 columns"> 
       <input type="text" placeholder="Find your Beach" ng-autocomplete ng-model="userBeach" details="details"/>
     </div>
